@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Cover Page Sederhana - Selamat Datang</title>
+    <style>
+        body {
+            background-image: url('images/y.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .cover-content {
+            background-color: rgba(209, 224, 228, 0.95);
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #1d3557;
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #1d3557;
+            margin-bottom: 0.2em;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        p.tagline {
+            font-size: 1.2em;
+            color: #457b9d;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #5d9ce4;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #24a74b;
+            transform: translateY(-3px);
+            text-align: center;
+        }
+        /* Animasi */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover-content">
+        <h1>Welcome To Our Website</h1>
+        <h2>Florist Serenity</h2>
+        <p class="tagline">"Pilihan terbaik untuk buket bunga berkualitas dengan desain modern dan pengiriman cepat."</p>
+        <a href="beranda.html" class="cta-button">Mulai Sekarang Juga</a>
+    </div>
+</body>
+
+</html>

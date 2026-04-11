@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist Serenity | Buket Bunga Cantik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <nav class="bg-sky shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-blue-400">Florist Serenity</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="beranda.html" class="hover:text-blue-500">Beranda</a>
+                <a href="Tentang-Kami.html" class="hover:text-blue-500">Tentang kami</a>
+                <a href="koleksi.html" class="hover:text-blue-500">Koleksi</a>
+                <a href="Produk-lain.html" class="hover:text-blue-500">Produk Lain</a>
+                <a href="kontak-person.html" class="hover:text-blue-500">Kontak Person</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="keranjang2.html" class="hover:text-blue-500">
+                    <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
+                    <span id="cart-count" class="bg-red-500 text-white text-xs rounded-full px-1">0</span>
+                </a>   
+            </div>
+        </div>
+    </nav>
+    <section class="contact-container">
+    <div class="contact-info">
+        <h2>Hubungi Kami 🌸</h2>
+        <p>Punya pertanyaan atau ingin pesan khusus? Kami siap membantu Anda.</p>
+        
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <strong>Telepon / WA</strong>
+                    <p>+62 85727630083</p>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong>Email</strong>
+                    <p>floristserenity@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <strong>Alamat Toko</strong>
+                    <p>Ds. Dringo, kec. Wonotunggal, kab. Batang</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-instagram"></i>
+                <div>
+                    <strong>instagram</strong>
+                    <p>floristsenerity_</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://wa.me/085727630083" class="btn-custom-wa">
+            <i class="fab fa-whatsapp"></i> Chat Admin Sekarang
+        </a>
+    </div>
+    <div class="contact-map" style="width: 100%; overflow: hidden;">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7920.879898586377!2d109.72914069493346!3d-6.957316722307658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70231889e2c7c9%3A0x48c5abc322068ef5!2sDringo%2C%20Kec.%20Wonotunggal%2C%20Kabupaten%20Batang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1775697687453!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 15px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+</section>
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-serif font-bold mb-4">Florist Serenity</h2>
+            <p class="text-gray-400 mb-6">Membawa keindahan ke depan pintu rumah Anda.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/floristsenerity_/" class="hover:text-blue-400"><i class="fab fa-instagram fa-xl"></i></a>
+                <a href="https://wa.me/6285727630083" class="hover:text-blue-400"><i class="fab fa-whatsapp fa-xl"></i></a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">© 2026 Florist Serenity. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="cart-modal">...</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja | Florist Serenity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-blue-50 text-gray-800">
+    <section class="py-16 container mx-auto px-6">
+        <div class="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto border border-blue-100">
+            <h1 class="text-3xl font-bold text-blue-600 mb-8 text-center italic">Keranjang Belanja</h1>
+            <div id="cart-items" class="space-y-4 mb-8 min-h-[50px]">
+                <p class="text-center text-gray-400 italic">Memuat keranjang...</p>
+            </div>
+            <div class="flex justify-between font-bold text-xl mt-4 border-t pt-4">
+                <span>Total Pembayaran:</span>
+                <span class="text-blue-700">Rp <span id="cart-total">0</span>
+            </div>
+            <div class="space-y-4 my-8">
+                <div>
+                    <label for="nama_lengkap" class="block text-sm font-semibold mb-1 text-gray-600">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Contoh: Budi Santoso" class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300 outline-none">
+                </div>
+                <div>
+                    <label for="alamat" class="block text-sm font-semibold mb-1 text-gray-600">Alamat Pengiriman</label>
+                    <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap pengiriman" class="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300 outline-none"></textarea>
+                </div>
+            </div>
+            <button onclick="resetKeranjang()" class="text-sm text-red-500 hover:underline mb-4 block mx-auto">Kosongkan Keranjang</button>
+
+            <button onclick="checkoutWhatsApp()" class="w-full bg-green-500 text-white font-bold py-4 rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-2 shadow-md">
+                <i class="fab fa-whatsapp text-2xl"></i> Checkout via WhatsApp
+            </button>
+            <a href="beranda.html" class="block text-center mt-6 text-blue-500 hover:underline">← kembali ke Beranda</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

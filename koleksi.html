@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja | Florist Serenity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-blue-50 text-gray-800">
+
+    <nav class="bg-sky shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-blue-400">Florist Serenity</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="beranda.html" class="hover:text-blue-500">Beranda</a>
+                <a href="Tentang-Kami.html" class="hover:text-blue-500">Tentang Kami</a>
+                <a href="koleksi.html" class="hover:text-blue-500">Koleksi</a>
+                <a href="Produk-lain.html" class="hover:text-blue-500">Produk Lain</a>
+                <a href="kontak-person.html" class="hover:text-blue-500">Kontak Person</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="keranjang2.html" class="hover:text-blue-500">
+                    <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
+                    <span id="cart-count" class="bg-red-500 text-white text-xs rounded-full px-1">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="produk" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/flower buket.jpg" alt="flower bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Flower Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 70.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Flower Bouquet" data-harga="70000">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/money.jpg" alt="money bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Money Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 80.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Money Buket" data-harga="80000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/snack.jpg" alt="snack bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Snack Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 50.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Snack Buket" data-harga="50000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/skincare.jpg" alt="skincare bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Skincare Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 100.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Skincare Buket" data-harga="100000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/coklat.jpg" alt="coklat bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Chocolate Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 70.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Chocolate Buket" data-harga="70000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/wisuda.jpg" alt="Graduation Bouquet" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Graduation Bouquet</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 80.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Graduation Buket" data-harga="80000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/ultah.jpg" alt="Special Birthday" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Special Birthday</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 75.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Spesial Birthday" data-harga="75000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="images/valentine.jpg" alt="Valentine's special" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Valentine's special</h3>
+                        <p class="text-blue-600 font-bold text-lg mb-4">Rp 85.000</p>
+                        <button class="btn-add w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-500 hover:text-white" data-nama="Valentine's Spesial" data-harga="85000">
+                        Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-order-banner">
+        <div class="container-custom">
+            <div class="custom-content">
+                <h2>Ingin Desain Buket Sendiri?</h2>
+                <p>Wujudkan buket impian Anda dengan layanan Custom Order kami. Bebas pilih bunga, warna, dan tema!</p>
+                <a href="https://wa.me/6285727630083" class="btn-custom-wa">
+                    <i class="fab fa-whatsapp"></i> Hubungi Kami Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-serif font-bold mb-4">Florist Serenity</h2>
+            <p class="text-gray-400 mb-6">Membawa keindahan ke depan pintu rumah Anda.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/floristsenerity_/" class="hover:text-blue-400"><i class="fab fa-instagram fa-xl"></i></a>
+                <a href="https://wa.me/6285727630083" class="hover:text-blue-400"><i class="fab fa-whatsapp fa-xl"></i></a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">© 2026 Florist Serenity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal">...</div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

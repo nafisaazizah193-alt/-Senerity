@@ -1,0 +1,434 @@
+/* =========================================
+   1. PEMBERSIH DASAR (RESET)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white(241, 245, 245);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Memastikan footer terdorong ke bawah */
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. NAVIGASI (FIXED)
+   ========================================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0);
+    /* Ini membuat transparan */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+.about-section,
+
+main, .about-section, .about-container {
+    margin-top: 100px;
+    flex: 1;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.hero-text { 
+    flex: 1;
+    margin-right: 90px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+/* =========================================
+   3. KONTEN UTAMA (AGAR TIDAK TERTUTUP NAV)
+   ========================================= */
+main,
+.about-section,
+.about-container {
+    margin-top: 70px;
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 20px auto 50px;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   4. SLIDER (MENGATASI GAMBAR BERTUMPUK)
+   ========================================= */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    /* Sembunyikan gambar yang meluap */
+    background: white;
+    padding: 40px 0;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(300px * 10);
+    /* Sesuaikan dengan jumlah gambar */
+    animation: geser-buket 20s linear infinite;
+}
+
+.slide {
+    width: 300px;
+    padding: 0 15px;
+    flex-shrink: 0;
+    /* Mencegah gambar menyusut/gepeng */
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@keyframes geser-buket {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-300px * 5));
+    }
+}
+/* =========================================
+   5. TESTIMONI (GRID)
+   ========================================= */
+
+.testi-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.testi-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.testi-card:hover {
+    transform: translateY(-10px);
+}
+
+/* =========================================
+   6. FOOTER (LUAS PENUH & TEKS PUTIH)
+   ========================================= */
+footer {
+    width: 100%;
+    background-color: #111827 ;
+    color: white ;
+    padding: 3rem 0;
+    margin-top: auto;
+    position: sticky;
+    top: 100vh;
+    
+    /* Paksa ke paling bawah */
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+footer a,
+footer p,
+footer h2 {
+    color: white ;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.custom-order-banner {
+   
+    /* Warna biru muda lembut */
+    padding: 60px 20px;
+    margin-top: 50px;
+    /* Jarak dari konten atas */
+   
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} 
+
+.custom-content h2 {
+    color: #1e40af;
+    /* Biru tua */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-content p {
+    color: #475569;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tombol WhatsApp yang disesuaikan ukurannya */
+.btn-custom-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25d366;
+    /* Hijau WA */
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-custom-wa:hover {
+    background-color: #128c7e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+
+/* Mengatasi harga yang menabrak navbar di atas (seperti di gambar) */
+
+main,
+section:first-of-type {
+    margin-top: 100px;
+}
+
+/* =========================================
+   5. TESTIMONI (GRID)
+   ========================================= */
+.testi-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    
+    /* TAMBAHKAN KODE DI BAWAH INI */
+    display: flex;            /* Mengaktifkan flexbox */
+    flex-direction: column;   /* Menyusun konten dari atas ke bawah */
+    align-items: center;      /* Memaksa semua elemen (img, h4, p) ke tengah */
+    text-align: center;       /* Memastikan teks ulasan juga rata tengah */
+}
+
+/* =========================================
+   8. REVIEW & TESTIMONI (IMAGE STYLING)
+   ========================================= */
+.testi-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3b82f6;
+    
+    /* Hapus margin-left/right auto karena sudah dihandle oleh align-items di parent */
+    display: block; 
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Pastikan ada tinggi yang jelas */
+    background-color: #eee; /* Warna cadangan jika peta gagal load */
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1; /* Pastikan di atas background tapi di bawah navbar */
+}
+
+/* =========================================
+   9. CONTACT & LOCATION SECTION
+   ========================================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi dua kolom */
+    gap: 40px;
+    padding: 60px 5%;
+    background: white;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2 {
+    color: #1e40af;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    margin: 30px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #3b82f6; /* Warna ikon biru */
+    background: #eff6ff;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.contact-item strong {
+    display: block;
+    color: #333;
+}
+
+.contact-item p {
+    color: #666;
+    margin: 0;
+}
+
+.contact-map {
+    width: 100%;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr; /* Menjadi satu kolom */
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    
+    .contact-map iframe {
+        height: 300px;
+    }
+}
+
+.instagram-gallery {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.insta-header h2 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.instagram-gallery {
+    font-size: 5rm;
+    padding: 60px 0; /* Atur padding atas bawah, kiri kanan 0 agar bisa diatur container */
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memaksa header, grid, dan tombol ke tengah */
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Tambahkan atau ubah margin-top di sini */
+    margin-top: 40px; 
+    margin-bottom: 30px; /* Jarak ke tombol di bawahnya */
+}
+
+.insta-item {
+    width: 250px; /* Pastikan lebar item konsisten */
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.btn-follow {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.btn-follow:hover {
+    background-color: #4CAF50;
+}
+
+
